@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Mi Portafolio</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1, user-scalable=no'>
+    <link rel="stylesheet" href="css/portafolio.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src='js/jquery.min.js'></script>
+    <script type="text/javascript">
+        $(window).on('scroll',function(){
+            if($(window).scrollTop()){
+                $('nav').addClass('black');
+            }else{
+                $('nav').removeClass('black');
+            }
+        })
+        $(document).ready(function(){
+            $(".menu h4").click(function(){
+                $("nav ul").toggleClass("active")
+            })
+        })
+    </script>
+</head>
+<body class="fondo">
+    <div class="responsive-bar">
+        <div class="logo">
+            <img src="imgs/bull.jpg">
+        </div>
+        <div class="menu">
+            <h4>Menu</h4>
+        </div>
+    </div>
+     <nav>
+        <div class="logo">
+            <img src="imgs/bull.jpg">
+        </div>
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portafolio">Portafolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+     </nav>   
+
+     <section class="banner" id="home">
+         <div class="textBx">
+             <h2>Hola,yo soy<br> <span>Brandon Orellana Rojas</span> </h2>
+            <h3>Soy web Developer</h3>
+            <a href="#about" class="btn">Acerca de mi</a>
+         </div>
+
+     </section>
+
+     <section class="about" id="about">
+        <div class="heading">
+            <h2>Acerca de mi</h2>
+        </div>
+        <div class="content">
+            <div class="contentBx w50">
+                <h3>Soy web Developer</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque praesentium nostrum sint iure quaerat, excepturi quia! Officia, pariatur maiores exercitationem nobis beatae delectus. Ad doloribus amet sunt quasi veniam aliquam.
+                    <br><br>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, nemo ut repellat voluptatem veritatis neque commodi soluta. Voluptatem dignissimos, necessitatibus maxime earum quae quos nobis hic suscipit est odit consequatur.
+                </p>
+            </div>
+            <div class="w50">
+                <img src="imgs/photography_800x600.jpg" class="img">
+            </div>
+        </div>
+     </section>
+    
+    <section class="sec3" id="services">
+
+
+        <div class="container">
+            <div class="card">
+                <div class="imgBx" data-text="Desing">
+                    <img src="imgs/icons/desing.png">
+                </div>
+                <div class="content">
+                        <div>
+                            <h3>Desing</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor molestias ipsum soluta sapiente, 
+                            </p>
+                            <a href="#">Read More</a>
+                        </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgBx" data-text="Code">
+                    <img src="imgs/icons/code.png">
+                </div>
+                    <div class="content">
+                        <div>
+                            <h3>Code</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor molestias ipsum soluta sapiente, 
+                        </p>
+                        <a href="#">Read More</a>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="card">
+                <div class="imgBx" data-text="Launch">
+                    <img src="imgs/icons/launch.png">
+                </div>
+                    <div class="content">
+                        <div>
+                            <h3>Launch</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor molestias ipsum soluta sapiente, 
+                            </p>
+                         <a href="#">Read More</a>
+                        </div>
+                    </div>
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+        <section class="sec2">
+
+        <div class="contenedor">
+            <div class="carta">
+                <div class="imgBx">
+                   <img src="imgs/shoes.png">
+                </div>
+                <div class="contentBx">
+                    <h2>Nuestros libros</h2>
+                    <div class="size">
+                        <h3>Cantidad :</h3>
+                        <span>7</span>
+                        <span>8</span>
+                        <span>9</span>
+                        <span>10</span>
+                    </div>
+                    <div class="color">
+                        <h3>Color: :</h3>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <a href="#">Ver</a>
+                </div>
+            </div>
+    
+        </div>
+        
+    </div>
+    </section>  
+
+
+    <section class="contact" id="contact">
+        <div class="heading">
+            <h2>Contact</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+        </div>    
+        <div class="content">
+            <div class="contactInfo">
+                <h3>Contact Info</h3>
+                <div class="contactInfoBx">
+
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Direccion</h3>
+                            <p>Villa Lugano,<br>Villa 20</p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>11 2695-4548</p>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-envelope"></i>
+                        </div>
+                        <div class="text">
+                            <h3>email</h3>
+                            <p>orellana.brandon.r@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="formBx">
+                <form>
+                    <h3>Mandarme mensaje</h3>
+                    <input type="text" name="" placeholder="Nombre Completo">
+                    <input type="email" name="" placeholder="Email">
+                    <textarea placeholder="Tu mensaje"></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+
+        </div>
+    </section>
+<div class="copyright">
+    <p>Copyright © 2020 | Brandon Orellana Rojas</p>
+</div>
+
+</body>
+</html>

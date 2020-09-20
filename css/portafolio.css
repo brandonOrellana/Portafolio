@@ -1,0 +1,695 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.fondo {
+    /* The image used 
+    background-image: url("https://images.wallpaperscraft.com/image/sand_sky_light_blue_4292_1280x720.jpg");*/
+    background-image: url("https://images.wallpaperscraft.com/image/paint_cracks_soft_colors_blue_72339_1920x1200.jpg");
+    /*background-image: url("https://images.wallpaperscraft.com/image/sand_desert_clouds_162774_1280x720.jpg");*/
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    }
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 100px;
+    box-sizing: border-box;
+    transition: .5s;
+    z-index: 1050;
+}
+nav.black{
+    background: rgb(0, 0, 0, 0.8);
+    height: 80px;
+    padding: 10px 50px;
+}
+
+nav .logo{
+    float: left;
+}
+
+nav .logo img{
+    height: 80px;
+    transition: .5s;
+}
+nav.black .logo img{
+    height: 60px;
+}
+
+nav ul{
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    line-height: 80px;
+    color: #262626;
+    padding: 5px 20px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+nav.black ul li a{
+    color: #fff;
+    line-height: 60px;
+}
+
+nav ul li a.active,
+nav ul li a:hover{
+    color: #fff;
+    background: #9bdc28;
+    transition: 0.4s;
+}
+section.sec1{
+    width: 100%;
+    height: 100vh;
+    background: url("https://lh3.googleusercontent.com/proxy/rVrO0P28asjHwSBGBegVL-fwcIrOIcVtBzepi8e-0SceYLJL2Bu01QCb8lFFmTbTb-khkFBI2-K7Iv8oJJeP83F-BuslxjhR0sNPondQRwXxEedKNol5heYZLUNs");
+    background-size: cover;
+}
+
+.responsive-bar{
+    display: none;
+
+}
+@media(max-width: 900px){
+    .responsive-bar{
+        display: block;
+        width: 100%;
+        height: 60px;
+        background:#262626;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 5px 20px;
+        box-sizing: border-box;
+        z-index: 2000;
+    }
+    .responsive-bar .logo img{
+        float: left;
+        height: 50px;
+    }
+    .responsive-bar .menu h4{
+        float: right;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        line-height: 50px;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+    nav,
+    nav.black{
+        background: #262626;
+        height: 60px;
+        padding: 0;
+    }
+    nav .logo{
+        display: none;
+    }
+    nav ul{
+        position: absolute;
+        width: 100%;
+        top: 60px;
+        left: 0;
+        background: #262626;
+        float: none;
+        display: none;
+    }
+    nav ul.active{
+        display: block;
+    }
+    nav ul li{
+        width: 100%;
+    }
+    nav ul li a{
+        display: block;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+        line-height: 100px !important;
+        color: #fff;
+        transition: 0.6s;
+    }
+     .container{
+        width: 100px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container .card{
+        width: 400px;
+    }
+    
+    section{
+        padding: 100px 50px 100px;
+    }
+    .banner{
+        padding: 100px 50px 100px;
+    }
+    .banner h2{
+        font-size: 1.5em;
+    }
+    .banner h3{
+        font-size: 1em;
+    }
+    
+    .btn{
+        margin-top: 10px !important;
+        padding: 10px 20px !important;
+        font-size: 16px !important;
+    }
+
+    .container .card{
+        max-width: 300px !important;
+        flex-direction: column !important;
+        height: auto !important;
+    }
+    .container .card .imgBx{
+        position: relative !important;
+    }
+    .container .card .imgBx,
+    .container .card:hover .imgBx{
+        width: 100% !important;
+        height: 200px !important;
+        left: 0 !important;
+    }
+    .container .card .imgBx img,
+    .container .card:hover .imgBx img{
+        max-width: 100px !important;
+    }
+    .container .card .content{
+        position: relative !important;
+        width: 100% !important;
+    }
+
+    
+}
+/*
+@media(max-width:360px){
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        height: auto;
+    }
+    .contenedor .carta{
+        width: 300px !important;
+    }
+    .contenedor .carta .imgBx img{
+        width: 100px;
+    }
+}
+
+*/
+
+
+.heading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111;
+}
+.heading{
+    font-weight: 600;
+    font-size: 30px;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+} 
+.contentBx{
+    padding-right: 30px;
+}
+
+.contentBx h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.w50{
+    min-width: 50%;
+}
+
+img{
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sec2{
+    box-sizing: border-box ;
+    display: flex ;
+}
+
+
+.contenedor{
+    font-family: 'Poppins', sans-serif; 
+    padding: 20px;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}   
+.contenedor .carta{
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background: #232323;
+    border-radius: 20px;
+    margin: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 25px rgb(0, 0, 0, 0.2);
+    transition: 0.5s;
+}
+
+.contenedor .carta:before{
+    content: '';
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #9bdc28;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+.contenedor .carta:hover:before{
+    clip-path: circle(300px at 80% -20%);
+}
+.contenedor .carta:after{
+    content: 'Book';
+    position:absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 10em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgb(255, 255, 255, 0.04);
+}
+.contenedor .carta .imgBx{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 100%;
+    height: 220px;
+    transition: 0.5s;
+}
+.contenedor .carta .imgBx img{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 270px;
+    
+}
+.contenedor .carta:hover .imgBx{
+    top: 0%;
+    transform: translateY(0%);
+}
+.contenedor .carta .imgBx img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-25deg);
+    width: 270px;
+}
+.contenedor .carta .contentBx{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 10;
+    
+}
+.contenedor .carta:hover .contentBx {
+    height: 210px;
+}
+.contenedor .carta .contentBx h2 {
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+.contenedor .carta .contentBx .size,
+.contenedor .carta .contentBx .color{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+.contenedor .carta:hover .contentBx .size{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.5s;
+}
+.contenedor .carta:hover .contentBx .color{
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.6s;
+}
+.contenedor .carta .contentBx .size h3,
+.contenedor .carta .contentBx .color h3{
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 10px;
+}
+.contenedor .carta .contentBx .size span{
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    display: inline-block;
+    color: #111;
+    background: #fff;
+    margin: 0 5px;
+    transition: 0.5s;
+    color: #111;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.contenedor .carta .contentBx .size span:hover{
+    background: #9bdc28;
+}
+.contenedor .carta .contentBx .color span{
+    width: 20px;
+    height: 20px;
+    background: #ff0;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.contenedor .carta .contentBx .color span:nth-child(2){
+    background: #9bdc28;
+}
+.contenedor .carta .contentBx .color span:nth-child(3){
+    background: #03a9f4;
+}
+.contenedor .carta .contentBx .color span:nth-child(4){
+    background: #e91e63;
+}
+.contenedor .carta .contentBx a{
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 4px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #111;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.5s;
+}
+.contenedor .carta:hover .contentBx a{
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.75s;
+}
+section{
+    padding: 100px;
+}
+.banner{
+    font-family: 'Poppins',sans-serif;
+    position: relative;
+    min-height: 100vh;
+   /* background: url();
+    background-size: cover;
+    background-position: right;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner h2{
+    font-size: 3em;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+.banner h2 span{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+.banner h3{
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 500;
+}
+.btn{
+    position: relative;
+    background: #2196f3;
+    display: inline-block;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sec3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #222;
+    /*font-family: consolas;*/
+    min-height: 100vh;
+}
+.container{
+    position: relative;
+    width: 1000px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.container .card{
+    position: relative;
+    height: 250px;
+    background: #fff;
+    display: flex;
+    width: 45%;
+    margin: 30px 0 !important;
+}
+
+.container .card .imgBx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #333;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+.container .card:hover .imgBx{
+    width: 150px;
+    height: 150px;
+    left: -75px;
+    top: calc(50% - 75px);
+    transition: 0.5s ease-in-out;
+    background: #ff0057;
+}
+.container .card .imgBx:before{
+    content: attr(data-text);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 6em;
+    color: rgb(255, 255, 255, .05);
+    font-weight: 700;
+}
+.container .card .imgBx img{
+    max-width: 100px;
+    transition: 0.5s ease-in-out;
+}
+.container .card:hover .imgBx img{
+    max-width: 75px;
+}
+.sec3 .container .card .content{
+    position: absolute;
+    right: 0;
+    width: calc(100% - 75px);
+    height: 100%;
+    
+    display: flex !important;
+    justify-content: center ;
+    align-items: center ;
+}
+.sec3 .container .card .content div{
+    padding: 20px;
+}
+.container .card .content h3{
+    margin-bottom: 5px;
+    font-size: 24px;
+}
+.container .card .content a{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;  
+    background: #333;
+    text-decoration: none;
+    color: #fff;
+}
+
+.contact{
+    font-family: 'Poppins', sans-serif; 
+}
+.contact{
+    background: #111;
+}
+.contact .heading{
+    color: white;
+}
+.formBx{
+    min-width: 60%;
+}
+.formBx form{
+    display: flex;
+    flex-direction: column;
+}
+.formBx form h3,
+.contactInfo h3{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.formBx form input,
+.formBx form textarea{
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+    background:transparent;
+    border: none;
+    outline: none;
+    background: #222;
+    color: #fff;
+    resize: none;
+}
+.formBx form textarea{
+    min-height: 200px;
+}
+.formBx form input::placeholder,
+.formBx form textarea::placeholder{
+    color: #999;
+}
+.formBx form input[type="submit"]{
+    max-width: 100px;
+    background: #2196f3;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.contactInfo{
+    min-width: 40px;
+}
+.contactInfoBx{
+    position: relative;
+}
+.contactInfoBx .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.contactInfoBx .box .icon{
+    min-width: 40px;
+    padding-top: 4px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 24px;
+}
+.contactInfoBx .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+.contactInfoBx .box .text h3{
+    font-weight: 500;
+    color: #2196f3;
+    margin-bottom: 0;
+}
+.copyright{
+    background: #000;
+    color:#fff;
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+
+
+
+/*
+Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+Icons made by <a href="https://www.flaticon.com/authors/monkik" title="monkik">monkik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+*/
